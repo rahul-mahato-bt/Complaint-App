@@ -141,17 +141,16 @@ loaded_model = load_model()
 # ---------------------------
 # Header
 # ---------------------------
-import base64
+# import base64
 
-def get_base64_image(path):
-    with open(path, "rb") as f:
-        return base64.b64encode(f.read()).decode()
+# def get_base64_image(path):
+#     with open(path, "rb") as f:
+#         return base64.b64encode(f.read()).decode()
 
-bt_logo_b64 = get_base64_image("BT Logo.png")
+# bt_logo_b64 = get_base64_image("BT Logo.png")
 
 st.markdown(f"""
 <div style="display:flex; align-items:center; justify-content:center; gap:30px; margin-bottom:10px;">
-    <img src="data:image/png;base64,{bt_logo_b64}" height="70">
 </div>
 """, unsafe_allow_html=True)
 st.markdown("""
